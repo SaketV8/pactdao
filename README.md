@@ -7,9 +7,7 @@ A simple on-chain DAO on Stellar. Pay XLM dues to join. Members submit text prop
 | | |
 |---|---|
 | **Frontend** | `https://pactdao.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/pactdao` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| *Contract* | https://stellar.expert/explorer/testnet/contract/CAMHQ4ZRWII4Y7BD5WRE4BVEFZ5RSYCECHRYOASN732ZDW4G56PBEATM|
 
 ## How It Works
 
