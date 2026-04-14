@@ -7,7 +7,7 @@ A simple on-chain DAO on Stellar. Pay XLM dues to join. Members submit text prop
 | | |
 |---|---|
 | **Frontend** | `https://pactdao.vercel.app` |
-| *Contract* | https://stellar.expert/explorer/testnet/contract/CAMHQ4ZRWII4Y7BD5WRE4BVEFZ5RSYCECHRYOASN732ZDW4G56PBEATM|
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CCXFDKQUG3ZBVHPZ6QBCVMCXTAA5HOKASK6D4KMCOM67GAT2VFBYV2AF` |
 
 ## How It Works
 
@@ -18,6 +18,16 @@ A simple on-chain DAO on Stellar. Pay XLM dues to join. Members submit text prop
 5. **Anyone** calls `finalize()` after the deadline — majority wins
 6. **Founder** can withdraw from treasury
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -53,3 +63,5 @@ treasury() -> i128
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
